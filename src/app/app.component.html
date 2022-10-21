@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CALCULADORA_ANGULAR </title>
+</head>
+<body>
+  
+
+<div class="Contenedor">
+<table class="text-center">
+    <tr>
+      <td><input type="text" id="Resultado"  [(ngModel)]="visualiza" class= "visualiza" placeholder="0"></td>
+
+      
+    </tr>
+    <tr>
+      <td><input type="hidden" id="Resultado"  [(ngModel)]="memoria" class="memoria"></td>
+    </tr>
+
+</table>
+<table>
+   <tr>
+        <th><input type="button" value="CE" (click)="borrar()" id= "borrarTodo"    class="boton"/></th>
+        <th><input type="button" value="⌫" id= "borrar" class="boton"/></th>
+        <th><input type="button" value="%" id= "porcentaje" class="boton"/></th>
+        <th><input type="button" value="÷" id= "division" (click)="divide()" class="boton"/></th>
+</tr>
+   <tr>
+        <th><input type="button"  value="7" (click)="siete('')" class="boton"/></th>
+        <th><input type="button" value="8"  (click)="ocho('')"id= "ocho" class="boton"/></th>
+        <th><input type="button" value="9"  (click)="nueve('')" id= "nueve" class="boton"/></th>
+        <th><input type="button" value="x" (click)="multiplica" id= "multiplicar" class="boton"/></th>
+</tr>
+    <tr>
+        <th><input type="button" value="4" (click)="cuatro('')"id= "cuatro" class="boton"/></th>
+        <th><input type="button" value="5" (click)="cinco('')"id= "cinco" class="boton"/></th>
+        <th><input type="button" value="6" (click)="seis('')"id= "seis" class="boton"/></th>
+        <th><input type="button" value="-"(click)="resta()" id= "resta" class="boton"/></th>
+</tr>
+    <tr>
+        <th><input type="button" value="1" (click)="uno('')"id= "uno" class="boton"/></th>
+        <th><input type="button" value="2" (click)="dos('')" id= "dos" class="boton"/></th>
+        <th><input type="button" value="3" (click)="tres('')"id= "tres" class="boton"/></th>
+        <th><input type="button" value="+" (click)="suma()" id= "suma" class="boton"/></th>
+</tr>
+    <tr>
+
+        <th><input type="button" value="+/-" id= "masomenos" class="boton"/></th>
+        <th><input type="button" value="0"  (click)="cero('')"id= "cero" class="boton"/></th>
+        <th><input type="button" value="." id= "punto" class="boton" /></th>
+        <th><input type="button" value="="  (click)="resultado()"id= "igual" class="boton" /></th>
+
+</tr>
+   
+
+</table>
+</div>
+</body>
+</html>
